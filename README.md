@@ -60,3 +60,4 @@ En la matriz de confusión se logra ver como el modelo 5 es el que mejor clasifi
 
 Aunque las tres tienen un comportamiento de clasificación distintos el porcentaje de clasificación es bastante similar.
 
+NOTA: Los gráficos tienen otro número de modelo porque cuando se corrió la notebook tenían ese nombre, luego cuando se emprolijó la notebook se modificaron. Modelo 3 (modelo 5 en gráficos), Modelo 4 (modelo 6 en gráficos), Modelo 5 (modelo 9 en gráficos).

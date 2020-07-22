@@ -16,13 +16,13 @@ En Check images se pueden observar 8 imágenes los cuales son ejemplos de estos 
 
 Se preprocesan las imágenes y se realiza un generador de imágenes debido a la poca cantidad que nos brinda el dataset.
 
-#Model 0
+#Model 0 -->
 En el primer modelo se obtuvo una accuracy para el set de validación de 77.38% y para el de test 72.92%. Se pueden observar oscilaciones en los gráficos de la accuracy y la loss lo que indica que el modelo no esta generalizando correctamente (overfitting alert!). Por lo tanto se probará con métodos de regularización o más cantidad de capas.
 
-#Modelo 1
+#Modelo 1 -->
 Se agrega una capa de Dropout para reducir el overfitting. Se obtuvo una accuracy para el set de validación de 84.11% y para el de test 78.27%. Aunque mejoró la accuracy todavía quedan rastros de overfitting.
 
-#Modelo 2
+#Modelo 2 -->
 En este modelo se probó data argumentation para que pueda entrenar con más data y pueda generalizar mejor. Se obtuvo una accuracy para el set de validación de 82.24% y para el de test 81.55%. Se ven que los valores de accuracy estan más cerca y que se logró bajar aún más el overfitting. Esto también se refleja en menos oscilaciones en los gráficos de accuracy y loss.
 
 #Modelo 3
@@ -33,10 +33,10 @@ En este modelo se probó data argumentation para que pueda entrenar con más dat
 * RMSprop(learning_rate=0.001, decay=1e-3)
 Se obtuvo una accuracy para el set de validación de 87.48% y para el de test 83.04%. Mejoró la accuracy pero podemos seguir viendo picos en los gráficos de accuracy y loss.
 
-#Model 4
+#Model 4 -->
 Extra Conv2D con 256 filtros. Se obtuvo una accuracy para el set de validación de 87.48% y para el de test 82.74%. Vemos como se sigue reduciendo el overfitting.
 
-#Model 5
+#Model 5 -->
 A las capas Conv2D se les agrego un regularizador kernel_regularizer=l2(0.00005). Se obtuvo una accuracy para el set de validación de 88.79% y para el de test 84.23%.
 
 Se toman los últimos tres modelos y se analiza la clasificación que realizaron.
@@ -64,5 +64,4 @@ Modelo 5
 En la matriz de confusión se logra ver como el modelo 5 es el que mejor clasifica calcificaciones. Tiene un porcentaje de una buena clasificación general de 84%.
 
 Aunque las tres tienen un comportamiento de clasificación distintos el porcentaje de clasificación es bastante similar.
-
 

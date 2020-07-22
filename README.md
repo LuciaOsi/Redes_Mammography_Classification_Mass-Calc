@@ -3,11 +3,6 @@ CNN network for Mass and Calcification mammography classification
 
 El dataset que se utilzó es el 'Curated Breast Imaging Subset of  Digital Database for Screening Mammography' el cual posee 3103 imágenes. Se trabajó con un archivo .zip dado que el espacio de almacenamiento que ocupaba el archivo era de 95.5 GB. El dataset de mamografías tienen dos subgrupos, mamografías con calcificaciones y con masas que a su vez cada uno ya esta previamente dividido en test y train.
 
-* mass_test -->  361 mamografias
-* mass_train --> 1231 mamografias
-* calc_test --> 284 mamografias
-* calc_train --> 1227 mamografias
-
 Se realiza un remap donde
 * 0 --> mamografías con masas
 * 1 --> mamografías con calcificaciones
